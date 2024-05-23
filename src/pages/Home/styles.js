@@ -30,6 +30,7 @@ export const Menu = styled.ul`
 `;
 
 export const List = styled.li`
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: white;
 `;
