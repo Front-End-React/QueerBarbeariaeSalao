@@ -30,7 +30,8 @@ export const Menu = styled.ul`
 `;
 
 export const List = styled.li`
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poetsen One";
+  font-weight: 400;
   font-size: 18px;
   color: white;
 `;

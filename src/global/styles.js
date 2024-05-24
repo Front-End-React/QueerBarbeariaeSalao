@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poetsen+One&display=swap');
-    
     * {
         margin: 0;
         padding: 0;
@@ -19,7 +17,7 @@ export default createGlobalStyle`
     }
 
     body, input, button {
-        font: 16px Montserrat, sans-serif;
+        font: 16px "Montserrat", sans-serif;
     }
 
     #root {
