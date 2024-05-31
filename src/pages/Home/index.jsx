@@ -11,6 +11,10 @@ export default function Home() {
         <img src={LogoLetter} alt="Logo Queer" />
       </Logo>
       <Menu>
+        <List>Quem somos</List>
+        <List>Equipe</List>
+        <List>Cortes</List>
+        <List>Planos</List>
         <List>Contato</List>
         <List>Login</List>
       </Menu>
