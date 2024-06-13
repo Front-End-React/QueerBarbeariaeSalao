@@ -4,6 +4,9 @@ import LogoLetter from "../../assets/images/logo_white.png";
 import BannerImage from "../../assets/images/cutting_hair.jpg";
 import BarberShopFacadeGreen from "../../assets/images/barber_shop_facade_green.jpeg";
 import TeamProfessionalPhoto from "../../assets/images/perfil_3.png";
+import ServiceBeardShave from "../../assets/images/perfil_5.png";
+import ServiceHairCut from "../../assets/images/seated_on_chair.png";
+import ServiceHairColored from "../../assets/images/colored_face.png";
 
 import {
   Container,
@@ -18,10 +21,15 @@ import {
   Title,
   Description,
   Team,
-  TeamProfessionals,
+  Slide,
   Professional,
   ProfessionalPhoto,
   ProfessionalDescription,
+  Services,
+  Card,
+  CardImage,
+  CardTitle,
+  CardDescription,
 } from "./styles";
 
 export default function Home() {
@@ -34,7 +42,7 @@ export default function Home() {
         <Menu>
           <List>Quem somos</List>
           <List>Equipe</List>
-          <List>Cortes</List>
+          <List>Serviços</List>
           <List>Planos</List>
           <List>Contato</List>
           <List>Login</List>
@@ -62,7 +70,7 @@ export default function Home() {
       </AboutUs>
       <Team>
         <Title>Nossos profissionais</Title>
-        <TeamProfessionals>
+        <Slide>
           <Professional>
             <ProfessionalPhoto>
               <img src={TeamProfessionalPhoto} alt="Foto do profissional" />
@@ -71,8 +79,40 @@ export default function Home() {
               Matheus Vince <br /> barbeiro, visagista e colorista
             </ProfessionalDescription>
           </Professional>
-        </TeamProfessionals>
+        </Slide>
       </Team>
+      <Services>
+        <Title>Serviços e valores</Title>
+        <Slide>
+          <Card>
+            <CardImage>
+              <img src={ServiceBeardShave} alt="Imagem exemplo do serviço" />
+            </CardImage>
+            <CardTitle>Corte de barba</CardTitle>
+            <CardDescription>
+              Preço: R$ 70,00 <br /> Duração: 40 minutos
+            </CardDescription>
+          </Card>
+          <Card>
+            <CardImage>
+              <img src={ServiceHairCut} alt="Imagem exemplo do serviço" />
+            </CardImage>
+            <CardTitle>Corte de cabelo</CardTitle>
+            <CardDescription>
+              Preço: R$ 100,00 <br /> Duração: 40 minutos
+            </CardDescription>
+          </Card>
+          <Card>
+            <CardImage>
+              <img src={ServiceHairColored} alt="Imagem exemplo do serviço" />
+            </CardImage>
+            <CardTitle>Coloração de cabelo</CardTitle>
+            <CardDescription>
+              Preço: R$ 500,00 <br /> Duração: 90 minutos
+            </CardDescription>
+          </Card>
+        </Slide>
+      </Services>
     </Container>
   );
 }
