@@ -1,6 +1,7 @@
 import React from "react";
 
-import LogoLetter from "../../assets/images/logo_white.png";
+import Navbar from "../../components/Navbar";
+
 import BannerImage from "../../assets/images/cutting_hair.jpg";
 import BarberShopFacadeGreen from "../../assets/images/barber_shop_facade_green.jpeg";
 import TeamProfessionalPhoto from "../../assets/images/perfil_3.png";
@@ -10,10 +11,6 @@ import ServiceHairColored from "../../assets/images/colored_face.png";
 
 import {
   Container,
-  Navbar,
-  Logo,
-  Menu,
-  List,
   Banner,
   AboutUs,
   BarberShopImages,
@@ -35,19 +32,7 @@ import {
 export default function Home() {
   return (
     <Container>
-      <Navbar>
-        <Logo>
-          <img src={LogoLetter} alt="Logo Queer" />
-        </Logo>
-        <Menu>
-          <List>Quem somos</List>
-          <List>Equipe</List>
-          <List>Serviços</List>
-          <List>Planos</List>
-          <List>Contato</List>
-          <List>Login</List>
-        </Menu>
-      </Navbar>
+      <Navbar />
       <Banner>
         <img src={BannerImage} alt="Imagem/Banner" />
       </Banner>
