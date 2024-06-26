@@ -2,12 +2,10 @@ import React from "react";
 
 import Navbar from "../../components/Navbar";
 
-import BannerImage from "../../assets/images/cutting_hair.jpg";
+import BannerImage from "../../assets/images/banner_come_meet_us.png";
 import BarberShopFacadeGreen from "../../assets/images/barber_shop_facade_green.jpeg";
 import TeamProfessionalPhoto from "../../assets/images/perfil_3.png";
 import ServiceBeardShave from "../../assets/images/perfil_5.png";
-import ServiceHairCut from "../../assets/images/seated_on_chair.png";
-import ServiceHairColored from "../../assets/images/colored_face.png";
 
 import {
   Container,
