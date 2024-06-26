@@ -78,7 +78,7 @@ export default function Home() {
               Preço: R$ 70,00 <br /> Duração: 40 minutos
             </CardDescription>
           </Card>
-          <Card>
+          {/* <Card>
             <CardImage>
               <img src={ServiceHairCut} alt="Imagem exemplo do serviço" />
             </CardImage>
@@ -95,7 +95,7 @@ export default function Home() {
             <CardDescription>
               Preço: R$ 500,00 <br /> Duração: 90 minutos
             </CardDescription>
-          </Card>
+          </Card> */}
         </Slide>
       </Services>
     </Container>

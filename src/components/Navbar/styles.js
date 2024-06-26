@@ -1,53 +1,75 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 100%;
+  height: ${(props) => (props.open ? "100vh" : "60px")};
   padding: 0 2rem;
-  position: relative;
-  background: none;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 1s;
 
   @media screen and (min-width: 1200px) {
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 80px;
+    flex-direction: row;
   }
 `;
 
-export const NavigationDesktop = styled.div`
+export const Navigation = styled.div`
   width: 100%;
   height: 60px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+
+  @media screen and (min-width: 1200px) {
+    height: 100%;
+  }
 `;
 
 export const Logo = styled.div`
-  width: auto;
+  width: 100px;
   height: 100%;
 
   img {
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 140px;
+  }
 `;
 
-export const Menu = styled.ul`
+export const MenuDesktop = styled.ul`
+  height: 100%;
+  gap: 1rem;
   display: none;
-  gap: 2rem;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
 
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 `;
 
-export const List = styled.li`
+export const ListDesktop = styled.li`
   font-family: "Poetsen One";
   font-weight: 400;
   font-size: 18px;
-  color: white;
+  color: #ffffff;
 `;
 
-export const MenuState = styled.div`
+export const MenuBurger = styled.button`
+  max-width: 30px;
+  max-height: 30px;
   display: block;
-  cursor: pointer;
+  border: none;
+  background: transparent;
 
   img {
     width: 100%;
@@ -59,20 +81,18 @@ export const MenuState = styled.div`
   }
 `;
 
-export const NavigationMobile = styled.div`
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  width: 100%;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
-  overflow: hidden;
+export const MenuMobile = styled.ul`
+  height: 100%;
+  margin-top: 6rem;
+  gap: 3rem;
+  display: ${(props) => (props.open ? "flex" : "none")};
+  flex-direction: column;
+  align-items: center;
+`;
 
-  > li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0%.7rem;
-  }
+export const ListMobile = styled.li`
+  font-family: "Poetsen One";
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
 `;

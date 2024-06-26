@@ -1,45 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 
 import LogoWhiteLetter from "../../assets/images/logo_white.png";
 import Hamburger from "../../assets/vectors/hamburger.svg";
+import Close from "../../assets/vectors/close.svg";
 
 import {
   Container,
-  NavigationDesktop,
   Logo,
-  Menu,
-  List,
-  MenuState,
-  NavigationMobile,
+  Navigation,
+  MenuDesktop,
+  ListDesktop,
+  MenuBurger,
+  MenuMobile,
+  ListMobile,
 } from "./styles";
 
 export default function Navbar() {
+  const [active, setActive] = useState(false);
+
   return (
-    <Container>
-      <NavigationDesktop>
+    <Container open={active}>
+      <Navigation>
         <Logo>
           <img src={LogoWhiteLetter} alt="Logo Queer" />
         </Logo>
-        <Menu>
-          <List>Quem somos</List>
-          <List>Equipe</List>
-          <List>Serviços</List>
-          <List>Planos</List>
-          <List>Contato</List>
-        </Menu>
-        <MenuState>
-          <img src={Hamburger} alt="Open" />
-        </MenuState>
-      </NavigationDesktop>
-      <NavigationMobile>
-        <Menu>
-          <List>Quem somos</List>
-          <List>Equipe</List>
-          <List>Serviços</List>
-          <List>Planos</List>
-          <List>Contato</List>
-        </Menu>
-      </NavigationMobile>
+        <MenuDesktop>
+          <ListDesktop>Quem somos</ListDesktop>
+          <ListDesktop>Equipe</ListDesktop>
+          <ListDesktop>Serviços</ListDesktop>
+          <ListDesktop>Planos</ListDesktop>
+          <ListDesktop>Contato</ListDesktop>
+        </MenuDesktop>
+        <MenuBurger onClick={() => setActive(!active)}>
+          <img src={active ? Close : Hamburger} alt="Open/Close" />
+        </MenuBurger>
+      </Navigation>
+      <MenuMobile open={active}>
+        <ListMobile>Quem somos</ListMobile>
+        <ListMobile>Equipe</ListMobile>
+        <ListMobile>Serviços</ListMobile>
+        <ListMobile>Planos</ListMobile>
+        <ListMobile>Contato</ListMobile>
+      </MenuMobile>
     </Container>
   );
 }
