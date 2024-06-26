@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: ${(props) => (props.open ? "100vh" : "60px")};
   padding: 0 2rem;
+  position: absolute;
   display: flex;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.1);
