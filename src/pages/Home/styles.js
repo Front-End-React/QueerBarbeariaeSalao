@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Banner = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   img {
     width: 100%;

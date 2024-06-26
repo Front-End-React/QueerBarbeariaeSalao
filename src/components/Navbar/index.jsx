@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 import LogoWhiteLetter from "../../assets/images/logo_white.png";
-import Hamburger from "../../assets/vectors/hamburger.svg";
-import Close from "../../assets/vectors/close.svg";
+import Hamburger from "../../assets/svg/hamburger.svg";
+import Close from "../../assets/svg/close.svg";
 
 import {
   Container,
