@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import BannerMobile from "../../assets/images/banner_mobile_come_meet_us.png";
+import BannerDesktop from "../../assets/images/banner_come_meet_us.png";
 
 export const Container = styled.div`
   width: 100%;
@@ -10,10 +12,12 @@ export const Container = styled.div`
 export const Banner = styled.div`
   width: 100%;
   height: 100vh;
+  background-image: url(${BannerMobile});
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  img {
-    width: 100%;
-    height: 100%;
+  @media screen and (min-width: 1200px) {
+    background-image: url(${BannerDesktop});
   }
 `;
 

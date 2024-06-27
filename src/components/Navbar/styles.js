@@ -41,7 +41,7 @@ export const Logo = styled.div`
   }
 
   @media screen and (min-width: 1200px) {
-    width: 140px;
+    width: 120px;
   }
 `;
 
