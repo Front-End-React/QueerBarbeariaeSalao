@@ -28,19 +28,66 @@ export const AboutUs = styled.div`
   width: 100%;
   padding: 50px;
   gap: 4rem;
-  background-color: purple;
+  background-color: #f7f1e3;
 `;
 
-export const BarberShopImages = styled.div`
-  width: 400px;
+/* export const AboutUsImage = styled.div`
+  width: 500px;
   height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url(${AbstractFigure});
+  background-repeat: no-repeat;
+  background-position: center;
+  align-content: center;
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s all ease-in-out;
+    display: block;
+    margin: 0 auto;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+`; */
+
+export const Gallery = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const AbstractFigure = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+`;
+export const VectorOne = styled.div`
+  /* max-width: 600px;
+  width: 100%; */
+  width: 600px;
+  transform: translateY(50%);
+`;
+export const VectorTwo = styled.div`
+  /* max-width: 400px;
+  width: 100%; */
+  width: 400px;
+  transform: translateY(-65%) translateX(5%) rotate(-15deg);
+  z-index: 1;
+`;
+export const Photo = styled.div`
+  transform: translateY(-170%) translateX(-10%);
+  z-index: 2;
+
+  img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 330px;
+    height: 330px;
   }
 `;
-
 export const Article = styled.div`
   display: flex;
   flex-direction: column;
@@ -52,14 +99,14 @@ export const Title = styled.h1`
   font-family: "Poetsen One";
   font-weight: 400;
   font-size: 24px;
-  color: white;
+  color: black;
 `;
 
 export const Description = styled.p`
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 18px;
-  color: white;
+  color: black;
 `;
 
 export const Team = styled.div`
